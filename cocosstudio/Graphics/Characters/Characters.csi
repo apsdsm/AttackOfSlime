@@ -1,0 +1,14 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Characters" Type="Plist" ID="f831691a-b963-4b20-80e6-9d446f8eb01f" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="Graphics/Characters/Player.png" />
+      <FilePathData Path="Graphics/Characters/PlayerDamaged.png" />
+      <FilePathData Path="Graphics/Characters/Slime.png" />
+      <FilePathData Path="Graphics/Characters/SlimeDamaged.png" />
+      <FilePathData Path="Graphics/Characters/SlimeLowHealth.png" />
+      <FilePathData Path="Graphics/Characters/SuperSlime.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

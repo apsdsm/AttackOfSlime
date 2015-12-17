@@ -1,0 +1,63 @@
+<Solution>
+  <PropertyGroup Name="AttackOfSlime" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="Game.csd" Type="Scene" />
+        <Folder Name="Maps">
+          <TmxFile Name="dungeon.tmx" />
+        </Folder>
+        <Project Name="Dungeon.csd" Type="Node" />
+        <Folder Name="Fonts">
+          <TTF Name="Lady Radical.ttf" />
+          <TTF Name="upheavtt.ttf" />
+        </Folder>
+        <Folder Name="Graphics">
+          <Image Name="title_image.png" />
+          <Image Name="backgorund.png" />
+          <Folder Name="Characters">
+            <Image Name="Player.png" />
+            <Image Name="PlayerDamaged.png" />
+            <Image Name="Slime.png" />
+            <Image Name="SlimeDamaged.png" />
+            <Image Name="SlimeLowHealth.png" />
+            <Image Name="SuperSlime.png" />
+            <PlistInfo Name="Characters.csi" Type="Plist" />
+          </Folder>
+        </Folder>
+        <Project Name="GameOver.csd" Type="Scene" />
+        <Folder Name="Particles">
+          <PlistParticleFile Name="background.plist" />
+          <PlistParticleFile Name="slimespawn.plist" />
+          <Image Name="cloud.png" />
+        </Folder>
+        <Folder Name="Scenes" />
+        <Project Name="StartMenu.csd" Type="Scene" />
+        <Folder Name="Tiles">
+          <Image Name="dungeon_sheet.png" />
+        </Folder>
+        <Folder Name="SpriteSheets">
+          <PlistImageFolder Image="Characters.png" PListFile="Characters.plist" Name=".Characters_PList.Dir">
+            <PlistImageFile Name="Characters_Player.png" Key="Characters/Player.png" />
+            <PlistImageFile Name="Characters_PlayerDamaged.png" Key="Characters/PlayerDamaged.png" />
+            <PlistImageFile Name="Characters_Slime.png" Key="Characters/Slime.png" />
+            <PlistImageFile Name="Characters_SlimeDamaged.png" Key="Characters/SlimeDamaged.png" />
+            <PlistImageFile Name="Characters_SlimeLowHealth.png" Key="Characters/SlimeLowHealth.png" />
+            <PlistImageFile Name="Characters_SuperSlime.png" Key="Characters/SuperSlime.png" />
+          </PlistImageFolder>
+        </Folder>
+        <Folder Name="Music">
+          <Audio Name="dungeon_bgm.wav" />
+          <Audio Name="startmenu_bgm.wav" />
+        </Folder>
+        <Folder Name="Sfx">
+          <Audio Name="move_sfx.wav" />
+          <Audio Name="slimeattack_sfx.wav" />
+          <Audio Name="dead_sfx.wav" />
+          <Audio Name="playerattack_sfx.wav" />
+        </Folder>
+        <Project Name="GameUI.csd" Type="Node" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

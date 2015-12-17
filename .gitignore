@@ -1,0 +1,32 @@
+# Mac
+.DS_Store
+
+# XCode
+*.moved-aside
+build/*
+*.xcworkspace
+*.mode1v3
+*.mode2v3
+*.pbxuser
+!default.xcworkspace
+!default.mode1v3
+!default.mode2v3
+!default.pbxuser
+*.perspectivev3
+profile
+xcuserdata
+.idea/*
+
+#MSVS
+Release/
+Release.win32/
+Debug/
+Debug.win32/
+.vs/
+ipch/
+packages/
+*.sdf
+*.opensdf
+
+# Don't include raw assets
+Assets/
