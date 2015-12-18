@@ -8,10 +8,9 @@ using namespace cocos2d;
 
 namespace AttackOfSlime
 {
-
 	/// <summary>
-	/// Classes that implement this interface can be moved somewhere in the scene
-	/// specified by a Vec2 coord.
+	/// Classes that implement this interface should be moveable to a position in the scene
+	/// specified in pixels in a Vec2.
 	/// </summary>
 	class MoveableInterface
 	{

@@ -64,7 +64,6 @@ void SceneManager::switchToScene( SceneManager::Scenes newScene )
 	if ( newScene == Scenes::Game )
 	{
 		director->replaceScene( GameScene::create() );
-		CCLOG( "added game scene" );
 	}
 	else if ( newScene == Scenes::GameOver )
 	{

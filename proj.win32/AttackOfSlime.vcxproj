@@ -150,12 +150,9 @@ xcopy /Y /Q "$(COCOS_FRAMEWORKS)\cocos2d-x-3.9\prebuilt\win32\*.*" "$(OutDir)"
     <ClCompile Include="..\Classes\Dungeon.cpp" />
     <ClCompile Include="..\Classes\DungeonReader.cpp" />
     <ClCompile Include="..\Classes\effects\ShakeEffect.cpp" />
-    <ClCompile Include="..\Classes\layers\GameOverLayer.cpp" />
     <ClCompile Include="..\Classes\managers\SlimeManager.cpp" />
     <ClCompile Include="..\Classes\readers\GameUIReader.cpp" />
     <ClCompile Include="..\Classes\SceneManager.cpp" />
-    <ClCompile Include="..\Classes\layers\DungeonLayer.cpp" />
-    <ClCompile Include="..\Classes\layers\StartMenuLayer.cpp" />
     <ClCompile Include="..\Classes\Player.cpp" />
     <ClCompile Include="..\Classes\scenes\GameOverScene.cpp" />
     <ClCompile Include="..\Classes\scenes\GameScene.cpp" />
@@ -176,12 +173,9 @@ xcopy /Y /Q "$(COCOS_FRAMEWORKS)\cocos2d-x-3.9\prebuilt\win32\*.*" "$(OutDir)"
     <ClInclude Include="..\Classes\enumerations\Direction.h" />
     <ClInclude Include="..\Classes\interfaces\DamagableInterface.h" />
     <ClInclude Include="..\Classes\interfaces\MoveableInterface.h" />
-    <ClInclude Include="..\Classes\layers\GameOverLayer.h" />
     <ClInclude Include="..\Classes\managers\SlimeManager.h" />
     <ClInclude Include="..\Classes\readers\GameUIReader.h" />
     <ClInclude Include="..\Classes\SceneManager.h" />
-    <ClInclude Include="..\Classes\layers\DungeonLayer.h" />
-    <ClInclude Include="..\Classes\layers\StartMenuLayer.h" />
     <ClInclude Include="..\Classes\Player.h" />
     <ClInclude Include="..\Classes\scenes\GameOverScene.h" />
     <ClInclude Include="..\Classes\scenes\GameScene.h" />

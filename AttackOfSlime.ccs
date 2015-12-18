@@ -56,7 +56,7 @@
           <Audio Name="dead_sfx.wav" />
           <Audio Name="playerattack_sfx.wav" />
         </Folder>
-        <Project Name="GameUI.csd" Type="Node" />
+        <Project Name="GameUI.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -21,14 +21,14 @@ using namespace AttackOfSlime;
 /// </summary>
 /// <param name="dungeon"></param>
 /// <returns></returns>
-Slime* Slime::create( Dungeon* dungeon, SlimeManager* factory )
+Slime* Slime::create( SlimeManager* factory )
 {
 	Slime* instance = new Slime();
 
 	if ( instance->initWithSpriteFrameName( "Characters/Slime.png" ) )
 	{
 		instance->autorelease();
-		instance->initialize( dungeon, factory );
+		instance->initOptions( factory );
 		instance->scheduleUpdate();
 	
 		return instance;
@@ -44,11 +44,9 @@ Slime* Slime::create( Dungeon* dungeon, SlimeManager* factory )
 /// Initialize the slime.
 /// </summary>
 /// <param name="dungeon">the dungeon that this slime inhabits</param>
-void Slime::initialize( Dungeon* dungeon, SlimeManager* factory )
+void Slime::initOptions( SlimeManager* manager )
 {
-	//this->dungeon = dungeon;
-
-	this->manager = factory;
+	this->manager = manager;
 
 	this->audio = SimpleAudioEngine::getInstance();
 

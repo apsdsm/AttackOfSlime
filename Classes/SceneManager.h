@@ -3,10 +3,14 @@
 // cocos2d
 #include "cocos2d.h"
 
+// namespaces
+using namespace cocos2d;
+
 namespace AttackOfSlime {
 
 	/// <summary>
-	/// Passes requests to change scenes to the Director object.
+	/// The scene manager passes requests to change scenes to the Director, and helps to
+	/// reduce the amount of information scenes need to know about each other.
 	/// </summary>
 	class SceneManager
 	{
@@ -29,7 +33,8 @@ namespace AttackOfSlime {
 
 	private:
 
-		cocos2d::Director* director;
+		// reference to the director
+		Director* director;
 
 		// initialize after creation
 		void initialize();

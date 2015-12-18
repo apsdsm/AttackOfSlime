@@ -23,7 +23,7 @@ namespace AttackOfSlime
 
 
 	/// <summary>
-	/// The player controlled avatar. Is able to move around the dungeon and 
+	/// The player controlled avatar is able to move around the dungeon and 
 	/// attack slimes by bashing into them. If slimes attack the player, health
 	/// is reduced. If health reaches zero, the game ends.
 	/// </summary>
@@ -38,7 +38,7 @@ namespace AttackOfSlime
 		void initOptions( Dungeon* dungeon );
 
 		// called when sprite enters the stage
-		//virtual void onEnter() override;
+		virtual void onEnter() override;
 
 		// update player each frame
 		virtual void update( float delta ) override;
@@ -76,7 +76,7 @@ namespace AttackOfSlime
 		bool receivingDamage = false;
 
 		// maps which keys correspond to which directions
-		std::map<EventKeyboard::KeyCode, Direction> keyMap;
+		static std::map<EventKeyboard::KeyCode, Direction> keyMap;
 
 		// event listener for keyboard events
 		EventListenerKeyboard* keyboardEventListener;

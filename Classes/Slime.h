@@ -23,37 +23,37 @@ namespace AttackOfSlime
 	class SlimeManager;
 
 	/// <summary>
-	/// Explores dungeon looking for the player. When next to the player will attack.
+	/// Slimes explore the dungeon, looking for the player. If they are next to the player, 
+	/// they will attack. If they take damage, they will be stunned for a fraction of a 
+	/// second, and won't be able to do anything.
 	/// </summary>
 	class Slime : public Sprite, public MoveableInterface, public DamagableInterface
 	{
 	public:
 
 		// create a new slime
-		static Slime* create( Dungeon* dungeon, SlimeManager* factory );
+		static Slime* create( SlimeManager* factory );
 
-		// implement Updateable
-		virtual void update( float deltaTime );
+		// called every frame
+		virtual void update( float deltaTime ) override;
 
-		// implement Moveable
+		// move slime to position
 		void moveToPosition( Vec2 position );
 
-		// implement Damageable
-		void damage( int ammount );
+		// damage slime by amount
+		void damage( int amount );
 
-		// how much is this slime worth?
+		// get the score modifier for the slime
 		int getScoreModifier();
 
 	private:
 
 		// used when calculating cost of next move
-		struct PotentialMove {
+		struct PotentialMove 
+		{
 			DungeonTile* tile;
 			float cost;
 		};
-
-		// dungeon this slime belongs in
-		//Dungeon* dungeon;
 
 		// manager that controls this slime
 		SlimeManager* manager;
@@ -61,7 +61,7 @@ namespace AttackOfSlime
 		// audio engine used by this slime
 		SimpleAudioEngine* audio;
 
-		// how much is this slime worth when killed?
+		// how much the score is modified when slime is killed
 		int scoreModifier = 100;
 
 		// time between actions
@@ -76,19 +76,19 @@ namespace AttackOfSlime
 		// how much damage slime can take
 		int health = 20;
 
-		// is the slime receiving damage right now?
+		// true if the slime is currently being damaged
 		bool receivingDamage = false;
 
-		// how long does it take the slime to recover after being hit?
+		// hot long it takes for the slime to recover after being hit
 		float recoveryCooldown = 0.2f;
 
-		// how long until the slime has recovered?
+		// time left until slime has recovered
 		float timeToRecovery = 0.0f;
 
 		// memory of recent past moves
 		std::vector<DungeonTile*> moveHistory;
 
-		// initialize the slime
-		void initialize( Dungeon* dungeon, SlimeManager* manager );
+		// initializes the slime
+		void initOptions( SlimeManager* manager );
 	};
 }

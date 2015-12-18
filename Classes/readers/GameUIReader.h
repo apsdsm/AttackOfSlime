@@ -10,7 +10,7 @@ using namespace cocostudio;
 namespace AttackOfSlime {
 
 	/// <summary>
-	/// Provides a reader interface to load dungeon objects from the cocos studio.
+	/// Provides a reader interface to load dungeon objects from the studio.
 	/// </summary>
 	class GameUIReader : public NodeReader
 	{

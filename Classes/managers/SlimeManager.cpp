@@ -61,7 +61,7 @@ void SlimeManager::spawnNewSlime()
 
 	if ( freeTile != nullptr )
 	{
-		auto slime = Slime::create( dungeon, this );
+		auto slime = Slime::create( this );
 
 		slimes.push_back( slime );
 

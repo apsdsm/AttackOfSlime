@@ -11,7 +11,7 @@ static ScoreManager* __instanceScoreManager = nullptr;
 /// <summary>
 /// Returns an instance of the score manager singleton.
 /// </summary>
-/// <returns>Score manager singleton</returns>
+/// <returns>Score manager instance reference.</returns>
 ScoreManager* ScoreManager::getInstance()
 {
 	if ( !__instanceScoreManager )
@@ -24,9 +24,9 @@ ScoreManager* ScoreManager::getInstance()
 
 
 /// <summary>
-/// Add the points to the score.
+/// Add points to the score.
 /// </summary>
-/// <param name="points"></param>
+/// <param name="points">Number of points to add to the score.</param>
 void ScoreManager::addPointsToScore( int points )
 {
 	score += points;
@@ -36,8 +36,17 @@ void ScoreManager::addPointsToScore( int points )
 /// <summary>
 /// Get the current score.
 /// </summary>
-/// <returns></returns>
+/// <returns>tThe current score.</returns>
 int ScoreManager::getScore()
 {
 	return score;
+}
+
+
+/// <summary>
+/// Resets the current score to zero.
+/// </summary>
+void ScoreManager::resetScore()
+{
+	score = 0;
 }

@@ -4,6 +4,7 @@
 // using namespaces
 using namespace AttackOfSlime;
 
+
 /// <summary>
 /// Static generator method. Creates effect with specified duration.
 /// </summary>
@@ -19,6 +20,7 @@ ShakeEffect* ShakeEffect::withDuration( float duration )
 	return shakeEffect;
 }
 
+
 /// <summary>
 /// Initializes the action interval.
 /// </summary>
@@ -32,6 +34,7 @@ bool ShakeEffect::initWithDuration( float duration )
 	}
 }
 
+
 /// <summary>
 /// Called once per frame
 /// </summary>
@@ -43,6 +46,7 @@ void ShakeEffect::update( float delta )
 
 	_target->setPosition( Vec2( startX + shakeX, startY + shakeY ) );
 }
+
 
 /// <summary>
 /// Called when action interval starts.
@@ -56,6 +60,7 @@ void ShakeEffect::startWithTarget( Node* target )
 	startX = target->getPosition().x;
 	startY = target->getPosition().y;
 }
+
 
 /// <summary>
 /// Called when action interval stops.

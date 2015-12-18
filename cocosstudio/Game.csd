@@ -6,7 +6,7 @@
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="480.0000" />
         <Children>
-          <AbstractNodeData Name="Dungeon" ActionTag="1284178282" Tag="58" IconVisible="True" RightMargin="640.0000" TopMargin="480.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="Dungeon" ActionTag="-776505417" Tag="71" IconVisible="True" RightMargin="640.0000" TopMargin="480.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <AnchorPoint />
             <Position />
@@ -16,14 +16,14 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="Dungeon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="GameUI" ActionTag="-1304028000" Tag="63" IconVisible="True" RightMargin="640.0000" TopMargin="480.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="0.0000" Y="0.0000" />
+          <AbstractNodeData Name="GameUI" ActionTag="2143557344" Tag="106" IconVisible="True" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+            <Size X="640.0000" Y="480.0000" />
             <AnchorPoint />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="GameUI.csd" Plist="" />
           </AbstractNodeData>
         </Children>

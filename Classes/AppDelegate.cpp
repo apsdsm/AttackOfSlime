@@ -3,8 +3,21 @@
 // scenes
 #include "scenes/StartMenuScene.h"
 #include "scenes/GameScene.h"
+
+// managers
 #include "SceneManager.h"
+
+// readers
+#include "DungeonReader.h"
+#include "readers/GameUIReader.h"
+
+// cocos2d
+#include "cocostudio\CocoStudio.h"
 #include "SimpleAudioEngine.h"
+
+
+
+
 
 USING_NS_CC;
 
@@ -57,15 +70,21 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	// add sprite sheet to sprite cache
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile( "SpriteSheets/Characters.plist" );
 
-	// precache music and sfx
+	// precache music
 	auto audio = SimpleAudioEngine::getInstance();
 	audio->preloadBackgroundMusic( "Music/dungeon_bgm.wav" );
 	audio->preloadBackgroundMusic( "Music/startmenu_bgm.wav" );
 
+	// precache sfx
 	audio->preloadEffect( "Sfx/dead_sfx.wav" );
 	audio->preloadEffect( "Sfx/move_sfx.wav" );
 	audio->preloadEffect( "Sfx/playerattack_sfx.wav" );
 	audio->preloadEffect( "Sfx/slimeattack_sfx.wav" );
+
+	// register class readers
+	auto loaderInstance = CSLoader::getInstance();
+	loaderInstance->registReaderObject( "DungeonReader", ( ObjectFactory::Instance )DungeonReader::getInstance );
+	loaderInstance->registReaderObject( "GameUIReader", ( ObjectFactory::Instance )GameUIReader::getInstance );
 
 	// get reference to scene manager, then pass first scene
 	sceneManager = SceneManager::getInstance();

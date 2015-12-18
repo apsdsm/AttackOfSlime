@@ -19,7 +19,7 @@ namespace AttackOfSlime
 		/// <summary>
 		/// Return a reference to the directory service instance.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>reference to the directory</returns>
 		static DirectoryService* getInstance()
 		{
 			if ( __instance == nullptr )

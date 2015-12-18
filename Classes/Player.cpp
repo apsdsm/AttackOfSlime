@@ -16,6 +16,15 @@ using namespace cocos2d;
 using namespace CocosDenshion;
 using namespace AttackOfSlime;
 
+/// <summary>
+/// Map key codes to directions.
+/// </summary>
+std::map<EventKeyboard::KeyCode, Direction> Player::keyMap = {
+	{ EventKeyboard::KeyCode::KEY_W, Direction::Up },
+	{ EventKeyboard::KeyCode::KEY_A, Direction::Left},
+	{ EventKeyboard::KeyCode::KEY_S, Direction::Down},
+	{ EventKeyboard::KeyCode::KEY_D, Direction::Right}
+};
 
 /// <summary>
 /// Creates a new player object, or deletes instance and returns nullptr if
@@ -100,33 +109,28 @@ int Player::getHealth()
 
 
 /// <summary>
-/// Initialize the player.
+/// Set up internal values. Doubles pixel size, removes smooth antialiasing, and puts the
+/// anchor in the top left to make it easier to position on the tiled map coords.
 /// </summary>
 /// <param name="dungeon">dungeon the player is tied to</param>
 void Player::initOptions(Dungeon* dungeon)
 {
-	// copy dungeon reference
 	this->dungeon = dungeon;
-
-	// scale up 200%
 	this->setScale( 2.0f );
-
-	// top left corner anchor
 	this->setAnchorPoint( Vec2( 0, 1 ) );
-
-	// set texture for no antialiasing
 	this->_texture->setAliasTexParameters();
+}
 
-	// get reference to audio engine
+/// <summary>
+/// Get external references, and set up events.
+/// </summary>
+void Player::onEnter()
+{
+	Sprite::onEnter();
+
 	this->audio = SimpleAudioEngine::getInstance();
-
-	// map different keys to possible directions of movement
-	keyMap[ EventKeyboard::KeyCode::KEY_W ] = Direction::Up;
-	keyMap[ EventKeyboard::KeyCode::KEY_A ] = Direction::Left;
-	keyMap[ EventKeyboard::KeyCode::KEY_S ] = Direction::Down;
-	keyMap[ EventKeyboard::KeyCode::KEY_D ] = Direction::Right;
-
-	// keyboard listener
+	
+	// create keyboard listeners
 	auto keylistener = cocos2d::EventListenerKeyboard::create();
 	keylistener->onKeyPressed = CC_CALLBACK_2( Player::onKeyboardEvent, this );
 

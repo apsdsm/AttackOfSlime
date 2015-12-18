@@ -3,7 +3,7 @@
 namespace AttackOfSlime
 {
 	/// <summary>
-	/// Keeps track of the current player score.
+	/// The score manager keeps track of the current score between scenes.
 	/// </summary>
 	class ScoreManager
 	{
@@ -17,6 +17,9 @@ namespace AttackOfSlime
 
 		// get the current score
 		int getScore();
+
+		// reset the current score to zero
+		void resetScore();
 
 	private:
 

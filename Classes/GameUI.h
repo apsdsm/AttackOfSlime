@@ -14,7 +14,8 @@ namespace AttackOfSlime
 	class Dungeon;
 
 	/// <summary>
-	/// Makes updates to the UI while the game scene is running.
+	/// The Game UI makes changes to the user interface during the game scene. Other
+	/// components can ask the UI to redraw itself by calling the `setDirty` method.
 	/// </summary>
 	class GameUI : public cocos2d::Node
 	{

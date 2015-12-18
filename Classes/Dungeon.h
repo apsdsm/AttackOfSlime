@@ -41,9 +41,6 @@ namespace AttackOfSlime
 		// called when dungeon enters scene
 		virtual void onEnter() override;
 
-		// get the current map
-		//cocos2d::TMXTiledMap* getCurrentMap();
-
 		// add an entity to the dungeon
 		bool addToDungeon( cocos2d::Vec2 coords, MoveableInterface* entity );
 

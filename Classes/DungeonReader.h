@@ -7,10 +7,10 @@
 using namespace cocos2d;
 using namespace cocostudio;
 
-//namespace AttackOfSlime {
+namespace AttackOfSlime {
 
 	/// <summary>
-	/// Provides a reader interface to load dungeon objects from the cocos studio.
+	/// Provides a reader interface to load dungeon objects from the studio.
 	/// </summary>
 	class DungeonReader : public NodeReader
 	{
@@ -25,4 +25,4 @@ using namespace cocostudio;
 		// create a new reader node
 		Node* createNodeWithFlatBuffers( const flatbuffers::Table *nodeOptions );
 	};
-//}
+}
