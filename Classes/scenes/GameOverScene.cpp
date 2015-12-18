@@ -55,5 +55,7 @@ void GameOverScene::onEnter()
 /// <param name="event">reference to event</param>
 void GameOverScene::onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* event )
 {
-	SceneService::getInstance()->switchToScene( SceneService::Scenes::StartMenu );
+	if ( keyCode == EventKeyboard::KeyCode::KEY_SPACE ) {
+		SceneService::getInstance()->switchToScene( SceneService::Scenes::StartMenu );
+	}
 }

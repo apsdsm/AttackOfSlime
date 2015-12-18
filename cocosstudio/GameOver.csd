@@ -42,14 +42,14 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Instructions" ActionTag="-176891273" Tag="25" IconVisible="False" LeftMargin="34.6054" RightMargin="20.3946" TopMargin="418.7399" BottomMargin="24.2601" FontSize="40" LabelText="Press any key to continue..." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="585.0000" Y="37.0000" />
+          <AbstractNodeData Name="Instructions" ActionTag="-176891273" Tag="25" IconVisible="False" LeftMargin="56.6054" RightMargin="42.3946" TopMargin="418.7399" BottomMargin="24.2601" FontSize="40" LabelText="Press space to continue..." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="541.0000" Y="37.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="327.1054" Y="42.7601" />
             <Scale ScaleX="0.5000" ScaleY="0.5000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5111" Y="0.0891" />
-            <PreSize X="0.9141" Y="0.0771" />
+            <PreSize X="0.8453" Y="0.0771" />
             <FontResource Type="Normal" Path="Fonts/upheavtt.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
