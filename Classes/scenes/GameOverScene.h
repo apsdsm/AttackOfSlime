@@ -12,11 +12,19 @@ namespace AttackOfSlime
 	/// Displayed when the player health drops to zero. From this screen the 
 	/// player can press space to return to the main menu.
 	/// </summary>
-	class GameOverScene
+	class GameOverScene : public Scene
 	{
 	public:
 
 		// compose and return a game scene
-		static Scene* create();
+		CREATE_FUNC( GameOverScene );
+
+		// called when scene enters the stage
+		virtual void onEnter() override;
+
+	private:
+
+		// handle keyboard events
+		void onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* event );
 	};
 }

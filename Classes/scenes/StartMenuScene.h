@@ -7,14 +7,22 @@ using namespace cocos2d;
 namespace AttackOfSlime
 {
 	/// <summary>
-	/// The first screen in the game. The player can press space to start playing
-	/// or 'c' to view a screen of credits.
+	/// The first scene in the game. The player can start a new game, or go to a credits
+	/// page that has information about the resources used in the game.
 	/// </summary>
-	class StartMenuScene
+	class StartMenuScene : public Scene
 	{
 	public:
 
 		// create and return start menu scene
-		static Scene* create();
+		CREATE_FUNC( StartMenuScene );
+
+		// called when scene enters the stage
+		virtual void onEnter() override;
+
+	private:
+
+		// handle keyboard events
+		void onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* evnet );
 	};
 }

@@ -1,27 +1,54 @@
-// scenes
+// dependencies
 #include "GameOverScene.h"
 
-// layers
-#include "layers/GameOverLayer.h"
+// managers
+#include "SceneManager.h"
 
 // cocos2d
 #include "cocos2d.h"
+#include "cocostudio/CocoStudio.h"
+#include "SimpleAudioEngine.h"
 
 // using namespaces
 using namespace cocos2d;
+using namespace CocosDenshion;
 using namespace AttackOfSlime;
 
 /// <summary>
-/// Composes and returns a game scene, including all the elements of the scene.
+/// Sets up the game over scene:
+/// - loads scene data and adds it to the parent node
+/// - adds keyboard event listener
+/// - stops background music and plays the death sound
 /// </summary>
-/// <returns>A Scene reference</returns>
-Scene* GameOverScene::create()
+void GameOverScene::onEnter()
 {
-	auto scene = Scene::create();
+	Scene::onEnter();
 
-	auto gameOverLayer = GameOverLayer::create();
+	// add load the scene data and attach to the actual scene
+	auto gameOverScene = CSLoader::createNode( "GameOver.csb" );
+	addChild( gameOverScene );
 
-	scene->addChild( gameOverLayer );
+	// set up event listeners
+	auto listener = EventListenerKeyboard::create();
+	listener->onKeyPressed = CC_CALLBACK_2( GameOverScene::onKeyboardEvent, this );
 
-	return scene;
+	// add events - they'll be removed when the node is destroyed
+	getEventDispatcher()->addEventListenerWithSceneGraphPriority( listener, this );
+
+	// pause music and play death sound
+	SimpleAudioEngine::getInstance()->stopBackgroundMusic();
+	SimpleAudioEngine::getInstance()->playEffect( "Sfx/dead_sfx.wav" );
+}
+
+/// <summary>
+/// If the player presses the space bar, will return them to the main menu.
+/// </summary>
+/// <param name="keyCode">key that was pressed</param>
+/// <param name="event">reference to event</param>
+void GameOverScene::onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* event )
+{
+	if ( keyCode == EventKeyboard::KeyCode::KEY_SPACE )
+	{
+		SceneManager::getInstance()->switchToScene( SceneManager::Scenes::StartMenu );
+	}
 }

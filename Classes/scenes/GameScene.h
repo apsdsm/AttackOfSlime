@@ -10,11 +10,20 @@ namespace AttackOfSlime
 	/// The main game scene. Player can move around and attack slimes. When player
 	/// health drops to zero, will switch to the game over scene.
 	/// </summary>
-	class GameScene
+	class GameScene : public Scene
 	{
 	public:
 	
 		// compose and return a game scene
-		static Scene* create();
+		CREATE_FUNC( GameScene );
+	
+		// called when scene enters the stage
+		virtual void onEnter() override;
+
+	private:
+
+		// handle keyboard events
+		void onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* event );
+
 	};
 }
