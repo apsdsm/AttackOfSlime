@@ -153,8 +153,10 @@ xcopy /Y /Q "$(COCOS_FRAMEWORKS)\cocos2d-x-3.9\prebuilt\win32\*.*" "$(OutDir)"
     <ClCompile Include="..\Classes\readers\DungeonReader.cpp" />
     <ClCompile Include="..\Classes\readers\GameUIReader.cpp" />
     <ClCompile Include="..\Classes\Player.cpp" />
+    <ClCompile Include="..\Classes\scenes\CreditsScene.cpp" />
     <ClCompile Include="..\Classes\scenes\GameOverScene.cpp" />
     <ClCompile Include="..\Classes\scenes\GameScene.cpp" />
+    <ClCompile Include="..\Classes\scenes\InstructionsScene.cpp" />
     <ClCompile Include="..\Classes\scenes\StartMenuScene.cpp" />
     <ClCompile Include="..\Classes\services\DirectoryService.cpp" />
     <ClCompile Include="..\Classes\services\SceneServce.cpp" />
@@ -174,8 +176,10 @@ xcopy /Y /Q "$(COCOS_FRAMEWORKS)\cocos2d-x-3.9\prebuilt\win32\*.*" "$(OutDir)"
     <ClInclude Include="..\Classes\readers\DungeonReader.h" />
     <ClInclude Include="..\Classes\readers\GameUIReader.h" />
     <ClInclude Include="..\Classes\Player.h" />
+    <ClInclude Include="..\Classes\scenes\CreditsScene.h" />
     <ClInclude Include="..\Classes\scenes\GameOverScene.h" />
     <ClInclude Include="..\Classes\scenes\GameScene.h" />
+    <ClInclude Include="..\Classes\scenes\InstructionsScene.h" />
     <ClInclude Include="..\Classes\scenes\StartMenuScene.h" />
     <ClInclude Include="..\Classes\services\DirectoryService.h" />
     <ClInclude Include="..\Classes\services\SceneService.h" />

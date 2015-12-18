@@ -19,7 +19,9 @@ namespace AttackOfSlime {
 		enum Scenes {
 			StartMenu,
 			Game,
-			GameOver
+			GameOver,
+			Credits,
+			Instructions
 		};
 
 		// static method returns instance to singleton manager

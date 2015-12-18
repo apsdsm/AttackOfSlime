@@ -87,6 +87,12 @@
     <ClCompile Include="..\Classes\readers\DungeonReader.cpp">
       <Filter>src\Readers</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\scenes\CreditsScene.cpp">
+      <Filter>src\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\InstructionsScene.cpp">
+      <Filter>src\Scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -151,6 +157,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\structures\DungeonTile.h">
       <Filter>src\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\CreditsScene.h">
+      <Filter>src\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\InstructionsScene.h">
+      <Filter>src\Scenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -57,6 +57,8 @@
           <Audio Name="playerattack_sfx.wav" />
         </Folder>
         <Project Name="GameUI.csd" Type="Layer" />
+        <Project Name="Credits.csd" Type="Scene" />
+        <Project Name="Instructions.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

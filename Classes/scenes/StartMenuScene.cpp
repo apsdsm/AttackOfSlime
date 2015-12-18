@@ -37,18 +37,31 @@ void StartMenuScene::onEnter()
 	getEventDispatcher()->addEventListenerWithSceneGraphPriority( listener, this );
 
 	// pause music
-	SimpleAudioEngine::getInstance()->playBackgroundMusic( "Music/startmenu_bgm.wav", true );
+	if ( !SimpleAudioEngine::getInstance()->isBackgroundMusicPlaying() ) {
+		SimpleAudioEngine::getInstance()->playBackgroundMusic( "Music/startmenu_bgm.wav", true );
+	}
 }
 
 
 /// <summary>
-/// If the player presses the spacebar, a new game will start.
+/// Takes care of keyboard bindings for the scene:
+/// - I takes user to the instructions
+/// - C takes user to credits
+/// - SPACE starts a new game
 /// </summary>
 /// <param name="keyCode">key that was pressed</param>
 /// <param name="event">event object reference</param>
 void StartMenuScene::onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* event )
 {
-	if ( keyCode == EventKeyboard::KeyCode::KEY_SPACE )
+	if ( keyCode == EventKeyboard::KeyCode::KEY_I )
+	{
+		SceneService::getInstance()->switchToScene( SceneService::Scenes::Instructions );
+	}
+	else if ( keyCode == EventKeyboard::KeyCode::KEY_C )
+	{
+		SceneService::getInstance()->switchToScene( SceneService::Scenes::Credits );
+	}
+	else if ( keyCode == EventKeyboard::KeyCode::KEY_SPACE )
 	{
 		SceneService::getInstance()->switchToScene( SceneService::Scenes::Game );
 	}

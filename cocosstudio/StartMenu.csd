@@ -6,74 +6,25 @@
       <ObjectData Name="Scene" Tag="14" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="480.0000" />
         <Children>
-          <AbstractNodeData Name="Background" ActionTag="-2049560725" Alpha="234" Tag="16" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="0.5120" RightMargin="-0.5120" ctype="SpriteObjectData">
-            <Size X="640.0000" Y="480.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.5120" Y="240.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5008" Y="0.5000" />
-            <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="Graphics/backgorund.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Logo" ActionTag="-1486173255" Tag="15" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="88.0000" RightMargin="88.0000" TopMargin="80.1080" BottomMargin="190.8920" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Logo" ActionTag="-1486173255" Tag="15" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="90.0138" RightMargin="85.9862" TopMargin="79.8714" BottomMargin="191.1286" ctype="SpriteObjectData">
             <Size X="464.0000" Y="209.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.0000" Y="295.3920" />
+            <Position X="322.0138" Y="295.6286" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.6154" />
+            <PrePosition X="0.5031" Y="0.6159" />
             <PreSize X="0.7250" Y="0.4354" />
             <FileData Type="Normal" Path="Graphics/title_image.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="StartPrompt" ActionTag="-564355257" Tag="17" IconVisible="False" LeftMargin="208.9969" RightMargin="207.0031" TopMargin="427.0000" BottomMargin="35.0000" FontSize="20" LabelText="Press Space To Start" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="StartPrompt" ActionTag="-564355257" Tag="17" IconVisible="False" LeftMargin="222.5341" RightMargin="193.4659" TopMargin="338.3416" BottomMargin="123.6584" FontSize="20" LabelText="Press Space To Start" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="224.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.9969" Y="44.0000" />
+            <Position X="334.5341" Y="132.6584" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5016" Y="0.0917" />
+            <PrePosition X="0.5227" Y="0.2764" />
             <PreSize X="0.3500" Y="0.0375" />
-            <FontResource Type="Normal" Path="Fonts/upheavtt.ttf" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Instructions" ActionTag="2145149530" Tag="20" IconVisible="False" LeftMargin="247.2555" RightMargin="246.7445" TopMargin="310.5641" BottomMargin="151.4359" FontSize="20" LabelText="Instructions:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="146.0000" Y="18.0000" />
-            <Children>
-              <AbstractNodeData Name="Instruction1" ActionTag="-882113814" Tag="18" IconVisible="False" LeftMargin="-41.0439" RightMargin="-36.9561" TopMargin="22.5477" BottomMargin="-22.5477" FontSize="20" LabelText="press  WASD  to move." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="224.0000" Y="18.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="70.9561" Y="-13.5477" />
-                <Scale ScaleX="0.8000" ScaleY="0.8000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4860" Y="-0.7527" />
-                <PreSize X="1.5342" Y="1.0000" />
-                <FontResource Type="Normal" Path="Fonts/upheavtt.ttf" Plist="" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="Instruction2" ActionTag="-817764703" Tag="19" IconVisible="False" LeftMargin="-91.1832" RightMargin="-90.8168" TopMargin="42.4283" BottomMargin="-42.4283" FontSize="20" LabelText="Bash into slimes to kill them." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="328.0000" Y="18.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="72.8168" Y="-33.4283" />
-                <Scale ScaleX="0.8000" ScaleY="0.8000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4987" Y="-1.8571" />
-                <PreSize X="2.2466" Y="1.0000" />
-                <FontResource Type="Normal" Path="Fonts/upheavtt.ttf" Plist="" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-            </Children>
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.2555" Y="160.4359" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5004" Y="0.3342" />
-            <PreSize X="0.2281" Y="0.0375" />
             <FontResource Type="Normal" Path="Fonts/upheavtt.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -86,6 +37,30 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.9793" Y="0.0225" />
             <PreSize X="0.0266" Y="0.0208" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="StartPrompt_0" ActionTag="855634456" Tag="160" IconVisible="False" LeftMargin="199.5341" RightMargin="170.4659" TopMargin="397.9937" BottomMargin="64.0063" FontSize="20" LabelText="press i for instructions" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="270.0000" Y="18.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="334.5341" Y="73.0063" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5227" Y="0.1521" />
+            <PreSize X="0.4219" Y="0.0375" />
+            <FontResource Type="Normal" Path="Fonts/upheavtt.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="StartPrompt_0_0" ActionTag="-621399303" Tag="161" IconVisible="False" LeftMargin="228.0341" RightMargin="198.9659" TopMargin="367.8012" BottomMargin="94.1988" FontSize="20" LabelText="press c for credits" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="213.0000" Y="18.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="334.5341" Y="103.1988" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5227" Y="0.2150" />
+            <PreSize X="0.3328" Y="0.0375" />
+            <FontResource Type="Normal" Path="Fonts/upheavtt.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

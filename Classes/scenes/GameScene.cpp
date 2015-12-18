@@ -24,7 +24,6 @@ using namespace AttackOfSlime;
 /// - loads scene data and adds it to the parent node
 /// - loads the slime manager node
 /// - loads the player node
-/// - adds keyboard event listener so player can pause the game
 /// - stops the intro music and plays the game music
 /// - resets the score to zero
 /// </summary>
@@ -48,25 +47,9 @@ void GameScene::onEnter()
 	scene->addChild( player );
 	dungeon->addToDungeon( cocos2d::Vec2( 1, 3 ), player );
 
-	// set up event listeners
-	auto keyboardEventListener = cocos2d::EventListenerKeyboard::create();
-	keyboardEventListener->onKeyPressed = CC_CALLBACK_2( GameScene::onKeyboardEvent, this );
-
-	// add events to dispatcher
-	auto eventDispatcher = Director::getInstance()->getEventDispatcher();
-	getEventDispatcher()->addEventListenerWithSceneGraphPriority( keyboardEventListener, this );
-
-	// play music
+	// play music if not already playing
 	SimpleAudioEngine::getInstance()->playBackgroundMusic( "Music/dungeon_bgm.wav", true );
 
 	// reset score
 	ScoreService::getInstance()->resetScore();
-}
-
-void GameScene::onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* event )
-{
-	if ( keyCode == EventKeyboard::KeyCode::KEY_P )
-	{
-		CCLOG( "player wants to pause" );
-	}
 }

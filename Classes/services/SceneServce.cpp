@@ -6,6 +6,8 @@
 
 // scenes
 #include "scenes/StartMenuScene.h"
+#include "scenes/CreditsScene.h"
+#include "scenes/InstructionsScene.h"
 #include "scenes/GameScene.h"
 #include "scenes/GameOverScene.h"
 
@@ -72,5 +74,13 @@ void SceneService::switchToScene( SceneService::Scenes newScene )
 	else if ( newScene == Scenes::StartMenu )
 	{
 		director->replaceScene( StartMenuScene::create() );
+	}
+	else if ( newScene == Scenes::Credits )
+	{
+		director->replaceScene( CreditsScene::create() );
+	}
+	else if ( newScene == Scenes::Instructions )
+	{
+		director->replaceScene( InstructionsScene::create() );
 	}
 }
