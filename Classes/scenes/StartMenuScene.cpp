@@ -1,8 +1,8 @@
 // dependencies
 #include "StartMenuScene.h"
 
-// managers
-#include "SceneManager.h"
+// services
+#include "services/SceneService.h"
 
 // cocos2d
 #include "cocos2d.h"
@@ -50,6 +50,6 @@ void StartMenuScene::onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* eve
 {
 	if ( keyCode == EventKeyboard::KeyCode::KEY_SPACE )
 	{
-		SceneManager::getInstance()->switchToScene( SceneManager::Scenes::Game );
+		SceneService::getInstance()->switchToScene( SceneService::Scenes::Game );
 	}
 }

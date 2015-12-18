@@ -9,7 +9,7 @@
 #include "interfaces/DamagableInterface.h"
 
 // structures
-#include "DungeonTile.h"
+#include "structures/DungeonTile.h"
 
 // namespaces
 using namespace cocos2d;

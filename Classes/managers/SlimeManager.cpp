@@ -5,13 +5,11 @@
 #include "GameUI.h"
 
 // structures
-#include "DungeonTile.h"
-
-// managers
-#include "ScoreManager.h"
+#include "structures/DungeonTile.h"
 
 // services
 #include "services/DirectoryService.h"
+#include "services/ScoreService.h"
 
 // namespaces
 using namespace AttackOfSlime;
@@ -83,7 +81,7 @@ void SlimeManager::notifyOfDeath( Slime* deadSlime )
 	
 	GameUI *gameUI = ( GameUI* ) DirectoryService::getInstance()->lookUp( "GameUI" );
 
-	ScoreManager::getInstance()->addPointsToScore( deadSlime->getScoreModifier() );
+	ScoreService::getInstance()->addPointsToScore( deadSlime->getScoreModifier() );
 
 	gameUI->setDirty();
 

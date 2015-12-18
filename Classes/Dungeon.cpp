@@ -5,7 +5,7 @@
 #include "GameUI.h"
 
 // structures
-#include "DungeonTile.h"
+#include "structures/DungeonTile.h"
 
 // managers
 #include "managers/SlimeManager.h"

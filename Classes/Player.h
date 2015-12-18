@@ -19,7 +19,7 @@ namespace AttackOfSlime
 {
 	// forward declarations
 	class Dungeon;
-	class ScoreManager;
+	class ScoreService;
 
 
 	/// <summary>

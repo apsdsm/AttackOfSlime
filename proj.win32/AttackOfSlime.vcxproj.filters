@@ -45,9 +45,6 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\DungeonReader.cpp">
-      <Filter>src\Readers</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\scenes\GameScene.cpp">
       <Filter>src\Scenes</Filter>
     </ClCompile>
@@ -81,11 +78,14 @@
     <ClCompile Include="..\Classes\services\DirectoryService.cpp">
       <Filter>src\Services</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\SceneManager.cpp">
-      <Filter>src\Managers</Filter>
+    <ClCompile Include="..\Classes\services\ScoreService.cpp">
+      <Filter>src\Services</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\ScoreManager.cpp">
-      <Filter>src\Managers</Filter>
+    <ClCompile Include="..\Classes\services\SceneServce.cpp">
+      <Filter>src\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\readers\DungeonReader.cpp">
+      <Filter>src\Readers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -94,9 +94,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\DungeonReader.h">
-      <Filter>src\Readers</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\scenes\GameScene.h">
       <Filter>src\Scenes</Filter>
@@ -140,16 +137,19 @@
     <ClInclude Include="..\Classes\services\DirectoryService.h">
       <Filter>src\Services</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\ScoreManager.h">
-      <Filter>src\Managers</Filter>
+    <ClInclude Include="..\Classes\services\ScoreService.h">
+      <Filter>src\Services</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\SceneManager.h">
-      <Filter>src\Managers</Filter>
+    <ClInclude Include="..\Classes\services\SceneService.h">
+      <Filter>src\Services</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\DungeonTile.h">
+    <ClInclude Include="..\Classes\readers\DungeonReader.h">
+      <Filter>src\Readers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\structures\DungeonInhabitant.h">
       <Filter>src\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\DungeonInhabitant.h">
+    <ClInclude Include="..\Classes\structures\DungeonTile.h">
       <Filter>src\Structures</Filter>
     </ClInclude>
   </ItemGroup>

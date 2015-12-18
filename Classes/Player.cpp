@@ -3,10 +3,10 @@
 #include "Dungeon.h"
 #include "GameUI.h"
 #include "Slime.h"
-#include "SceneManager.h"
 
 // services
-#include "services\DirectoryService.h"
+#include "services/DirectoryService.h"
+#include "services/SceneService.h"
 
 // effects
 #include "effects/ShakeEffect.h"
@@ -89,7 +89,7 @@ void Player::damage( int damageAmmount )
 
 	if ( health <= 0 )
 	{
-		SceneManager::getInstance()->switchToScene( SceneManager::Scenes::GameOver );
+		SceneService::getInstance()->switchToScene( SceneService::Scenes::GameOver );
 		return;
 	}
 

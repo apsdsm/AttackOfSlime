@@ -1,11 +1,11 @@
 // classes
 #include "GameUI.h"
 #include "Dungeon.h"
-#include "ScoreManager.h"
 #include "Player.h"
 
 // services
 #include "services/DirectoryService.h"
+#include "services/ScoreService.h"
 
 // using namespaces
 using namespace cocos2d;
@@ -60,7 +60,7 @@ void GameUI::update( float deltaTime )
 /// </summary>
 void GameUI::updateScore()
 {
-	score->setString( std::to_string( ScoreManager::getInstance()->getScore() ) );
+	score->setString( std::to_string( ScoreService::getInstance()->getScore() ) );
 }
 
 

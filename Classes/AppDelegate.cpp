@@ -5,10 +5,10 @@
 #include "scenes/GameScene.h"
 
 // managers
-#include "SceneManager.h"
+#include "services/SceneService.h"
 
 // readers
-#include "DungeonReader.h"
+#include "readers/DungeonReader.h"
 #include "readers/GameUIReader.h"
 
 // cocos2d
@@ -87,8 +87,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	loaderInstance->registReaderObject( "GameUIReader", ( ObjectFactory::Instance )GameUIReader::getInstance );
 
 	// get reference to scene manager, then pass first scene
-	sceneManager = SceneManager::getInstance();
-	sceneManager->runWithScene( SceneManager::Scenes::StartMenu );
+	sceneManager = SceneService::getInstance();
+	sceneManager->runWithScene( SceneService::Scenes::StartMenu );
 
     return true;
 }

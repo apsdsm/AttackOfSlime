@@ -5,12 +5,12 @@ namespace AttackOfSlime
 	/// <summary>
 	/// The score manager keeps track of the current score between scenes.
 	/// </summary>
-	class ScoreManager
+	class ScoreService
 	{
 	public:
 
 		// get an instance of the singleton manager
-		static ScoreManager* getInstance();
+		static ScoreService* getInstance();
 
 		// add the specified number of points to the score
 		void addPointsToScore( int points );

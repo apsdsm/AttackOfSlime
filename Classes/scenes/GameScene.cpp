@@ -5,7 +5,9 @@
 
 // managers
 #include "managers/SlimeManager.h"
-#include "ScoreManager.h"
+
+// services
+#include "services/ScoreService.h"
 
 // cocos2d
 #include "cocos2d.h"
@@ -58,7 +60,7 @@ void GameScene::onEnter()
 	SimpleAudioEngine::getInstance()->playBackgroundMusic( "Music/dungeon_bgm.wav", true );
 
 	// reset score
-	ScoreManager::getInstance()->resetScore();
+	ScoreService::getInstance()->resetScore();
 }
 
 void GameScene::onKeyboardEvent( EventKeyboard::KeyCode keyCode, Event* event )

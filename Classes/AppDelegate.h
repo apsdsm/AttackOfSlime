@@ -6,7 +6,7 @@
 // Attack of Slime forward declarations
 namespace AttackOfSlime
 {
-	class SceneManager;
+	class SceneService;
 }
 
 /**
@@ -44,7 +44,7 @@ public:
 private:
 
 	// reference to the scene manager singleton
-	AttackOfSlime::SceneManager* sceneManager;
+	AttackOfSlime::SceneService* sceneManager;
 };
 
 #endif // _APP_DELEGATE_H_

@@ -12,7 +12,7 @@ namespace AttackOfSlime {
 	/// The scene manager passes requests to change scenes to the Director, and helps to
 	/// reduce the amount of information scenes need to know about each other.
 	/// </summary>
-	class SceneManager
+	class SceneService
 	{
 	public:
 
@@ -23,7 +23,7 @@ namespace AttackOfSlime {
 		};
 
 		// static method returns instance to singleton manager
-		static SceneManager* getInstance();
+		static SceneService* getInstance();
 
 		// invokes the current scene as the starting scene
 		void runWithScene( Scenes newScene );

@@ -2,11 +2,11 @@
 
 // cocos2d
 #include "cocos2d.h"
-#include "2d\CCTMXTiledMap.h"
+#include "2d/CCTMXTiledMap.h"
 
 // structures
-#include "DungeonTile.h"
-#include "DungeonInhabitant.h"
+#include "structures/DungeonTile.h"
+#include "structures/DungeonInhabitant.h"
 
 // enumerations
 #include "enumerations/Direction.h"

@@ -2,7 +2,7 @@
 #include "cocos2d.h"
 
 // classes
-#include "SceneManager.h"
+#include "SceneService.h"
 
 // scenes
 #include "scenes/StartMenuScene.h"
@@ -14,29 +14,29 @@ using namespace cocos2d;
 using namespace AttackOfSlime;
 
 // static global variable //
-static SceneManager* __instanceSceneManager = nullptr;
+static SceneService* __instanceSceneService = nullptr;
 
 
 /// <summary>
 /// Returns an instance of the scene manager singleton
 /// </summary>
 /// <returns>Scene manager singleton</returns>
-SceneManager* SceneManager::getInstance()
+SceneService* SceneService::getInstance()
 {
-	if ( !__instanceSceneManager )
+	if ( !__instanceSceneService )
 	{
-		__instanceSceneManager = new SceneManager();
-		__instanceSceneManager->initialize();
+		__instanceSceneService = new SceneService();
+		__instanceSceneService->initialize();
 	}
 
-	return __instanceSceneManager;
+	return __instanceSceneService;
 }
 
 
 /// <summary>
 /// Initialize the scene manager
 /// </summary>
-void SceneManager::initialize()
+void SceneService::initialize()
 {
 	director = Director::getInstance();
 }
@@ -46,7 +46,7 @@ void SceneManager::initialize()
 /// Set as first scene that is displayed in game.
 /// </summary>
 /// <param name="newScene">new scene name</param>
-void SceneManager::runWithScene( SceneManager::Scenes newScene )
+void SceneService::runWithScene( SceneService::Scenes newScene )
 {
 	if ( newScene == Scenes::StartMenu )
 	{
@@ -59,7 +59,7 @@ void SceneManager::runWithScene( SceneManager::Scenes newScene )
 /// Switches to scene, dumping the old one in the process.
 /// </summary>
 /// <param name="newScene">new scene name</param>
-void SceneManager::switchToScene( SceneManager::Scenes newScene )
+void SceneService::switchToScene( SceneService::Scenes newScene )
 {
 	if ( newScene == Scenes::Game )
 	{
