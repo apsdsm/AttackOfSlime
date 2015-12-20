@@ -22,7 +22,7 @@ If you've already installed it previously, or your system has any kind of dev to
 
 Next, download the most recent build of the game from here:
 
-[Attack of Slime v1.0](http://apsdsm.com/content/images/2015/12/attackofslime_gameplay01.gif)
+[Attack of Slime v1.0](https://s3-us-west-2.amazonaws.com/attackofslime/AttackOfSlime-win32-v1.0.zip)
 
 Unzip the game someplace on your drive and double click the .exe to start playing.
 
@@ -30,7 +30,7 @@ Unzip the game someplace on your drive and double click the .exe to start playin
 
 Attack of Slime is easy to play - use the WASD keys to move around the dungeon, and bash into slimes to attack them. Each slime takes two hits to kill. Slimes that get close enough will attack you and chip away at your health. When your health reaches zero, it's game over.
 
-![Attacking Slimes](https://s3-us-west-2.amazonaws.com/attackofslime/attackofslime_gameplay01.gif)
+![Gameplay](attackofslime_gameplay01.gif)
 
 ## Credits
 
