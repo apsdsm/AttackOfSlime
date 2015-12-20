@@ -30,3 +30,6 @@ packages/
 
 # Don't include raw assets
 Assets/
+
+# Don't include distribution files
+Dist/

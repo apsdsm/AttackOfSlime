@@ -10,13 +10,27 @@ It's a pretty simple game, but in this case I wanted to concentrate on making so
 
 I believe the code is pretty well structured and easy to read, but ultimately I'd like to turn this into a tutorial, which is in part why it's up here on the GitHubs.
 
+## Installation
+
+### Windows
+
+Before anything else, you may need to install the Microsoft C++ Redistributable on your system. You can download it from here:
+
+[Microsoft C++ Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+
+If you've already installed it previously, or your system has any kind of dev tools installed, this is probably not necessary, but in case you try get the game to run and it borks, this is almost certainly why.
+
+Next, download the most recent build of the game from here:
+
+[Attack of Slime v1.0](https://s3-us-west-2.amazonaws.com/attackofslime/AttackOfSlime-win32-v1.0.zip)
+
+Unzip the game someplace on your drive and double click the .exe to start playing.
+
 ## How To Play
 
 Attack of Slime is easy to play - use the WASD keys to move around the dungeon, and bash into slimes to attack them. Each slime takes two hits to kill. Slimes that get close enough will attack you and chip away at your health. When your health reaches zero, it's game over.
 
-## Download
-
-I'll have the download links here soon - I'm just testing to make sure it works at least on Windows 10 and to make sure there aren't any hidden dll dependencies (what's that? You don't test your games on a machine other than your dev machine?). A build for OS X may follow. 
+![Attacking Slimes](https://s3-us-west-2.amazonaws.com/attackofslime/attackofslime_gameplay01.gif)
 
 ## Credits
 
