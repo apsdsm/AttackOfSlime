@@ -22,7 +22,7 @@ If you've already installed it previously, or your system has any kind of dev to
 
 Next, download the most recent build of the game from here:
 
-[Attack of Slime v1.0](https://s3-us-west-2.amazonaws.com/attackofslime/AttackOfSlime-win32-v1.0.zip)
+[Attack of Slime v1.0](http://apsdsm.com/content/images/2015/12/attackofslime_gameplay01.gif)
 
 Unzip the game someplace on your drive and double click the .exe to start playing.
 
